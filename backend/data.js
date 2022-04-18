@@ -1,7 +1,22 @@
+import bcrypt from "bcryptjs";
 const data = {
+    users: [
+        {
+    name: "Borhen",
+    email: "borem3110@gmail.com",
+    password: bcrypt.hashSync('1234', 8),
+    isAdmin: true
+},
+{
+    name: "Morad",
+    email: "momo@gmail.com",
+    password: bcrypt.hashSync('1080', 8),
+    isAdmin: false
+}
+    ],
     products: [
         {
-            _id: '1',
+           
             name: "Aprilia sr 101",
             image: "../images/p1.jpg",
             category: "mecanic",
@@ -14,7 +29,7 @@ const data = {
             description: "High quality"
         },
         {
-            _id: '2',
+           
             name: "Aprilia cr 150",
             image: "../images/p2.jpg",
             category: "mecanic",
@@ -27,7 +42,7 @@ const data = {
             description: "High quality"
         },
         {
-            _id: '3',
+           
             name: "Harley Davidson",
             image: "../images/p3.jpg",
             category: "mecanic",
@@ -40,7 +55,7 @@ const data = {
             description: "High quality"
         },
         {
-            _id: '4',
+            
             name: "Honda cbr1001",
             image: "../images/p4.jpg",
             category: "mecanic",
@@ -53,7 +68,7 @@ const data = {
             description: "High quality"
         },
         {
-            _id: '5',
+           
             name: "Asus",
             image: "../images/p5.jpg",
             category: "electronic",
@@ -66,7 +81,7 @@ const data = {
             description: "High quality"
         },
         {
-            _id: '6',
+            
             name: "Hp pavillon",
             image: "../images/p6.jpg",
             category: "electronic",
@@ -79,7 +94,7 @@ const data = {
             description: "High quality"
         },
         {
-            _id: '7',
+           
             name: "Lenovo 1500",
             image: "../images/p7.jpg",
             category: "electronic",
@@ -92,7 +107,7 @@ const data = {
             description: "High quality"
         },
         {
-            _id: '8',
+            
             name: "Hp Compaq",
             image: "../images/p8.jpg",
             category: "electronic",
@@ -105,7 +120,7 @@ const data = {
             description: "High quality"
         },
         {
-            _id: '9',
+           
             name: "Toshiba 1400",
             image: "../images/p9.jpg",
             category: "electronic",
@@ -118,7 +133,7 @@ const data = {
             description: "High quality"
         },
         {
-            _id: '10',
+            
             name: "Huawei 35k",
             image: "../images/p10.jpg",
             category: "electronic",
@@ -131,7 +146,7 @@ const data = {
             description: "High quality"
         },
         {
-            _id: '11',
+            
             name: "Iphone 5",
             image: "../images/p11.jpg",
             category: "electronic",
@@ -144,7 +159,7 @@ const data = {
             description: "High quality"
         },
         {
-            _id: '12',
+            
             name: "Redmi n9",
             image: "../images/p12.jpg",
             category: "electronic",
@@ -157,7 +172,7 @@ const data = {
             description: "High quality"
         },
         {
-            _id: '13',
+            
             name: "Samsung galaxy z",
             image: "../images/p13.jpg",
             category: "electronic",
@@ -170,7 +185,7 @@ const data = {
             description: "High quality"
         },
         {
-            _id: '14',
+            
             name: "Samsung s4",
             image: "../images/p14.jpg",
             category: "electronic",
@@ -183,7 +198,7 @@ const data = {
             description: "High quality"
         },
         {
-            _id: '15',
+            
             name: "Samsung s5",
             image: "../images/p15.jpg",
             category: "electronic",
@@ -196,6 +211,12 @@ const data = {
             description: "High quality"
         }
 
-    ]
+    ],
+    
+
+    allCategories: {categories:["mecanic", "electronic"],
+    
+}
+
 };
 export default data;
